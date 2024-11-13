@@ -1,0 +1,350 @@
+
+.home {
+  font-family: "Eczar", serif;
+  font-optical-sizing: auto;
+}
+body{
+  cursor:none;
+overflow-x: hidden;
+}
+.cursor-dot{
+  width: 5px;
+  height: 5px;
+  background-color: rgb(253, 193, 29);
+}
+.cursor-outline{
+  width: 30px;
+  height: 30px;
+  border: 2px solid hsla(48, 92%, 48%, 0.793);
+
+}
+
+.cursor-dot,.cursor-outline{
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 1;
+  pointer-events: none;
+
+}
+.name {
+  font-size: 45px;
+  font-family: "Eczar", serif;
+}
+.contactPara{
+  font-size: 75px;
+}
+.landingpage{
+  margin-top:100px ;
+}
+.landingpage1{
+  margin-top:100px ;
+}
+.profilephoto{
+  height: 60vh;
+  width: 60vh;
+  margin-left: 50px;
+  position: absolute;
+
+  z-index: 2;
+}
+/* contact section css */
+.contact {
+  display: flex;
+  justify-content: space-around;
+
+}
+.ContainerHome {
+  padding: 90px;
+}
+
+/* .contactinput {
+  width: 0%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90w;
+  max-width: 60rem;
+} */
+
+.namee,
+.email,
+.msg {
+  font-size: medium;
+  width: 100%;
+  max-width: 40rem;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  color: black;
+}
+
+.msg {
+  height: 25vh;
+}
+.submit{
+  padding: 6px 242px;
+}
+/* icons hover effect and styling  eg: linkedin, arrow, message  */
+
+.icon {
+  width: 42px;
+  height: 41px;
+  border: 2px solid;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 10px;
+  background-color: white;
+}
+
+.brand {
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+}
+
+.icon:hover {
+  background-image: linear-gradient(to bottom right,rgb(255, 153, 0), rgb(255, 153, 0), rgb(255, 255, 255));
+}
+
+.brand:hover {
+  color: rgb(255, 255, 255);
+  animation: shake 0.90s;
+}
+
+@keyframes shake {
+  10% {
+      transform: rotate(15deg);
+  }
+
+  20% {
+      transform: rotate(-15deg);
+  }
+
+  30% {
+      transform: rotate(15deg);
+  }
+
+  40% {
+      transform: rotate(-15deg);
+  }
+}
+
+/* scollbar */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.up-arrow {
+  float: right;
+  margin-top: -60px;
+  margin-right: 20px;
+}
+
+::-webkit-scrollbar {
+  height: 0px;
+  width: 5px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background:rgb(255, 153, 0);
+}
+
+.contacticons{
+  display: none;
+}
+
+
+.image-container {
+  position: relative;
+  width:600px; /* Set the desired width */
+  height:550px; /* Set the desired height */
+  padding: 0%;
+  margin: 0%;
+
+}
+.background-image {
+  position: relative;
+  top: -140px;
+  left:-42px;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 1;
+  opacity: 0.7; /* Optional: make background semi-transparent */
+}
+.aboutimage{
+  width: 100%;
+  height: 100vh;
+  margin-top: -90px;
+}
+/* skills */
+.skillsimg{
+  height: 70px;
+  
+}
+.skillsimg1{
+  width: 130px;
+  height: 120px;
+  margin-top: -25px;
+}
+.offcanvas{
+  width: 100%;
+}
+
+/* Small screens (large smartphones) */
+@media (max-width: 768px) {
+  .submit{
+    padding: 6px 22px;
+  }
+  
+  .aboutpara{
+    margin-top: 50px;
+  }
+  .profilephoto{
+    height: 28vh;
+    width: 60%;
+    margin-top: 20px;
+    margin-left:55px;
+  }
+  .landingpage{
+    margin-top:50px ;
+    
+  }
+  .landingpage1{
+    margin-top:0px ;
+  }
+  .image-container {
+    position: relative;
+    width:380px; /* Set the desired width */
+    height:310px; /* Set the desired height */
+  }
+  .background-image {
+    position: relative;
+    top: -22px;
+    left: -20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    opacity: 0.7; /* Optional: make background semi-transparent */
+  }
+  .contactPara{
+    font-size: 55px;
+
+  }
+  .aboutimage{
+    width: 40vh;
+    height: 40vh;
+    margin-top: 0px;
+  }
+
+.offcanvas{
+  width: 90%;
+}
+.contacticons{
+  display: block;
+  width: 2px; /* Line thickness */
+  height: 100px; /* Line height; adjust as needed */
+  background-color: #000; /* Line color */
+  margin: 0 30px; 
+  margin-top: -30px;
+}
+
+}
+
+
+
+/* Extra small screens (small smartphones) */
+@media (max-width: 576px) {
+  .submit{
+    padding: 6px 22px;
+  }
+  
+  .aboutpara{
+    margin-top: 50px;
+  }
+  .profilephoto{
+    height: 28vh;
+    width: 60%;
+    margin-top: 20px;
+    margin-left:55px;
+  }
+  .landingpage{
+    margin-top:50px ;
+    
+  }
+  .landingpage1{
+    margin-top:0px ;
+  }
+  .image-container {
+    position: relative;
+    width:380px; /* Set the desired width */
+    height:310px; /* Set the desired height */
+  }
+  .background-image {
+    position: relative;
+    top: -22px;
+    left: -20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    opacity: 0.7; /* Optional: make background semi-transparent */
+  }
+  .contactPara{
+    font-size: 55px;
+
+  }
+  .aboutimage{
+    width: 40vh;
+    height: 40vh;
+    margin-top: 0px;
+  }
+  /* skills */
+.skillsimg{
+  height: 70px;
+  
+}
+.skillsimg1{
+  width: 130px;
+  height: 120px;
+  margin-top: -25px;
+}
+.offcanvas{
+  width: 90%;
+}
+.contacticons{
+  display: block;
+  width: 2px; /* Line thickness */
+  height: 100px; /* Line height; adjust as needed */
+  background-color: #000; /* Line color */
+  margin: 0 30px; 
+  margin-top: -30px;
+}
+body{
+ 
+overflow-x: hidden;
+}
+
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+ 
+}
+
+/* Large screens (desktops and laptops) */
+@media (max-width: 1200px) {
+ 
+}

@@ -1,0 +1,92 @@
+.navbar-header {
+    font-family: "Eczar", serif;
+    font-optical-sizing: auto;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.header {
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+    
+}
+
+.logo {
+    height: 70px;
+    width: 70px;
+    text-decoration: none;
+}
+
+.nav a {
+    position: relative;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.nav a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    transition: .3s;
+}
+
+.nav a:hover {
+    color: rgb(255, 153, 0);
+}
+
+.nav a:hover::before {
+    width: 100%;
+    background-color: rgb(255, 153, 0);
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+.navbar-header{
+    padding: 0%;
+    background-image: linear-gradient(to bottom right, rgb(43, 41, 41), rgb(62, 58, 58), rgb(255, 255, 255));
+padding-bottom: 5px;
+}
+    .nav {
+        display: block;
+        text-align: center;
+    }
+
+    .nav a {
+        margin-left: 0%;
+        
+    }
+
+    .navbar-collapse {
+        height: 200px;
+
+    }
+
+    .nav .fa-brands {
+        padding: 12px ;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .header{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+  }
